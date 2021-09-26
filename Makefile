@@ -7,7 +7,7 @@ DBG_FLAGS := -g -g3 -O0 -DENABLE_DEBUG
 REL_FLAGS := -O2
 LDFLAGS :=
 
-EXEC := default
+EXEC := ducky
 BUILD_DIR := build
 INC_DIR := .
 SRC_DIR := src
