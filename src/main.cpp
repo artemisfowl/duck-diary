@@ -19,10 +19,12 @@ int main()
 	fs.open(fname, std::fstream::out | std::fstream::app);
 
 	while (can_run) {
-		std::time_t ct = std::time(nullptr);
-		strftime(time, 100, "%H:%M:%S", std::localtime(&ct));
 		std::cout << "$ ";
 		std::getline(std::cin, s);
+
+		/* capture the time when the thought occurred */
+		std::time_t ct = std::time(nullptr);
+		strftime(time, 100, "%H:%M:%S", std::localtime(&ct));
 
 		/* breaking condition */
 		if (s.length() == 1 && s == ";")
