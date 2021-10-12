@@ -35,6 +35,7 @@ int main()
 				<< " : " << s << std::endl;
 			fs << time << " : " << s << "\n";
 		}
+		fs.flush();
 		memset(time, '\0', 100);
 	}
 
